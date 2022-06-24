@@ -23,7 +23,7 @@ module ALU
 	output reg [31:0] ALU_Result_o
 );
 
-localparam ADD = 4'b0000;
+localparam LUI         = 4'b1000;
    
 always @ (A_i or B_i or ALU_Operation_i)
 	begin
