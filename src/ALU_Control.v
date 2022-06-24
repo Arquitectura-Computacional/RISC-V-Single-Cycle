@@ -24,6 +24,8 @@ module ALU_Control
 );
 
 localparam U_Type_LUI         = 7'bx_010_xxx;
+localparam I_Type_ORI         = 7'bx_001_110;
+
 
 reg [3:0] alu_control_values;
 wire [6:0] selector;
