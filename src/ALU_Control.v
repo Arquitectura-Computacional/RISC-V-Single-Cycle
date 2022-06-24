@@ -38,8 +38,7 @@ assign selector = {funct7_i, ALU_Op_i, funct3_i};
 always@(selector)begin
 	casex(selector)
 		
-		R_Type_ADD:		alu_control_values = 4'b0000;
-		I_Type_ADDI:	alu_control_values = 4'b0000;
+		I_Type_ADDI: alu_control_values         = 4'b0000;
 	
 
 		default: alu_control_values = 4'b00_00;
