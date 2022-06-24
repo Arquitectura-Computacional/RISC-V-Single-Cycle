@@ -36,6 +36,9 @@ always @ (A_i or B_i or ALU_Operation_i)
 		
 			LUI: //lui
             			ALU_Result_o = {B_i[19:0],12'b0};
+			
+            		ORI: // ori
+            			ALU_Result_o = A_i | B_i;
 
 		
 			default:
