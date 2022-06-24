@@ -34,8 +34,8 @@ always @ (A_i or B_i or ALU_Operation_i)
 	begin
 		case (ALU_Operation_i)
 		
-			ADD:
-				ALU_Result_o = A_i + B_i;
+			LUI: //lui
+            			ALU_Result_o = {B_i[19:0],12'b0};
 
 		
 			default:
