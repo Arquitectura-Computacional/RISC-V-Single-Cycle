@@ -25,6 +25,7 @@ module ALU_Control
 
 localparam U_Type_LUI         = 7'bx_010_xxx;
 localparam I_Type_ORI         = 7'bx_001_110;
+localparam I_Type_ADDI         = 7'bx_001_000;
 
 
 reg [3:0] alu_control_values;
