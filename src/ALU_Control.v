@@ -42,6 +42,7 @@ always@(selector)begin
 		R_Type_SUB: alu_control_values         = 4'b0001;
 		I_Type_ORI: alu_control_values         = 4'b1001;
 		U_Type_LUI: alu_control_values         = 4'b1000;
+		I_Type_SLLI: alu_control_values         = 4'b1100;
 	
 
 		default: alu_control_values = 4'b00_00;
