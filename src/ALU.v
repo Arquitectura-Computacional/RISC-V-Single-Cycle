@@ -39,6 +39,9 @@ always @ (A_i or B_i or ALU_Operation_i)
 			
             		ORI: // ori
             			ALU_Result_o = A_i | B_i;
+			
+			ADDI: //addi
+            			ALU_Result_o = A_i + B_i;
 
 		
 			default:
