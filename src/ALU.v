@@ -42,6 +42,9 @@ always @ (A_i or B_i or ALU_Operation_i)
 			
 			ADDI: //addi
             			ALU_Result_o = A_i + B_i;
+			
+			SLLI: //slli
+            			ALU_Result_o = A_i << B_i;
 
 		
 			default:
