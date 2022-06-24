@@ -48,6 +48,9 @@ always @ (A_i or B_i or ALU_Operation_i)
 			
 			SRLI: //slli
             			ALU_Result_o = A_i >> B_i;
+			
+			SUB: //sub
+            			ALU_Result_o = A_i - B_i;
 
 		
 			default:
