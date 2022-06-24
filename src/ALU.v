@@ -24,6 +24,7 @@ module ALU
 );
 
 localparam LUI         = 4'b1000;
+localparam ORI         = 4'b1001;
    
 always @ (A_i or B_i or ALU_Operation_i)
 	begin
