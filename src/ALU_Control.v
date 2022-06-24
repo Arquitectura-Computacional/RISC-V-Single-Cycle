@@ -25,9 +25,9 @@ module ALU_Control
 
 localparam U_Type_LUI         = 7'bx_010_xxx;
 localparam I_Type_ORI         = 7'bx_001_110;
-localparam I_Type_ADDI         = 7'bx_001_000;
-localparam I_Type_SLLI         = 7'b0_001_001;
-localparam I_Type_SRLI         = 7'b0_001_101;
+localparam I_Type_ADDI        = 7'bx_001_000;
+localparam I_Type_SLLI        = 7'b0_001_001;
+localparam I_Type_SRLI        = 7'b0_001_101;
 localparam R_Type_SUB         = 7'b1_000_000;
 
 	
@@ -43,8 +43,8 @@ always@(selector)begin
 		R_Type_SUB: alu_control_values         = 4'b0001;
 		I_Type_ORI: alu_control_values         = 4'b1001;
 		U_Type_LUI: alu_control_values         = 4'b1000;
-		I_Type_SLLI: alu_control_values         = 4'b1100;
-		I_Type_SRLI: alu_control_values         = 4'b0011;
+		I_Type_SLLI: alu_control_values        = 4'b1100;
+		I_Type_SRLI: alu_control_values        = 4'b0011;
 	
 		default: alu_control_values = 4'b00_00;
 	endcase
