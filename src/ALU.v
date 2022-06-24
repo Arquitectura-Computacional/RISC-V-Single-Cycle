@@ -28,7 +28,7 @@ localparam ORI         = 4'b1001;
 localparam ADDI        = 4'b0000;
 localparam SLLI        = 4'b1100;
 localparam SRLI        = 4'b0011;
-
+localparam SUB         = 4'b0001;
    
 always @ (A_i or B_i or ALU_Operation_i)
 	begin
